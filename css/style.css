@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@700;900&display=swap");
+:root {
+  --vermelhSuave: hsl(7, 99%, 70%);
+  --amarelo: hsl(51, 100%, 49%);
+  --cianoEscuroNSaturado: hsl(167, 40%, 24%);
+  --azulEscuro: hsl(198, 62%, 26%);
+  --cianoEscuroModerado: hsl(168, 34%, 41%);
+  --azulEscuroMuitoDesaturado: hsl(212, 27%, 19%);
+  --azulEscuroMuitoAcinzentado: hsl(213, 9%, 39%);
+  --azulEscuroAcinzentado: hsl(232, 10%, 55%);
+  --azulAcinzentado: hsl(210, 4%, 67%);
+  --branco: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 60px !important;
+  right: 0;
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: cubic-bezier(0.68, -0.26, 0.38, 1.32) 0.5s;
+  transition: cubic-bezier(0.68, -0.26, 0.38, 1.32) 0.5s;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100vw;
+  padding: 20px 15px;
+}
+
+.navbar .logo {
+  position: relative;
+  width: 100px;
+}
+
+.navbar .hamburguer {
+  width: 20px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .hamburguer .linha {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.navbar .navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -500px;
+  right: 0;
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: cubic-bezier(0.68, -0.26, 0.38, 1.32) 0.5s;
+  transition: cubic-bezier(0.68, -0.26, 0.38, 1.32) 0.5s;
+}
+
+.navbar .navbar-links::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+}
+
+.navbar .navbar-links ul {
+  width: 100%;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  background-color: white;
+  padding: 30px;
+}
+
+.navbar .navbar-links ul .links {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--azulEscuroAcinzentado);
+}
+
+.navbar .navbar-links ul li {
+  height: 35px;
+}
+
+.navbar .navbar-links ul .botao {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background: yellow;
+  margin-top: 10px;
+}
+
+.test {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  min-height: 60vh;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */
