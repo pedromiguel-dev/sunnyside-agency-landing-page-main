@@ -1,7 +1,7 @@
 //Button shows Dialogg
 
 const but = document.querySelector('.hamburguer');
-const menu = document.querySelector('.navbar-links');
+const menu = document.querySelector('.navbar-linksMobile');
 but.addEventListener('click', function aparece(e){
     
     menu.classList.toggle("active");

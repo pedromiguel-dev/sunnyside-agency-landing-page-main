@@ -1,6 +1,13 @@
-@import "variaveis";
-@import "tudo";
-@import "modificadores";
+@import "./elementos/tudo";
+@import "./elementos/cores";
+@import "./elementos/desktop";
+@import "./elementos/navbarMobile";
+@import "./elementos/main";
+@import "./elementos/sectionMain";
+@import "./elementos/modificadores";
+@import "./elementos/comentarios";
+@import "./elementos/galeria";
+@import "./elementos/rodape";
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap'); //font-family: 'Barlow', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@700;900&display=swap');

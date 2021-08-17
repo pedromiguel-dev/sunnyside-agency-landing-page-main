@@ -1,0 +1,66 @@
+
+.coment{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "titulo" "." "." ".";
+    padding: 3.125rem;
+
+    &__titulo{
+        grid-area: titulo;
+        color: var(--azulAcinzentado);
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+        letter-spacing: 0.3125rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }      
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 17.1875rem;
+        height: 15.625rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    &__img{
+        border-radius: 50%;
+        width: 3.125rem;
+        height: auto;
+    }
+    &__comentario{
+        color: var(--azulEscuroMuitoAcinzentado);
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        font-size: 0.9375rem;
+        line-height: 1.5;
+    }
+    &__NomeCargo{
+        color: var(--azulAcinzentado);        
+    }
+    &__nome{
+        font-size: 0.9375rem;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        color: var(--azulEscuroMuitoDesaturado);
+        margin-bottom: 0.3125rem;
+    }
+    &__cargo{
+        color: var(--azulAcinzentado);
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        font-size: 0.9375rem;
+    }
+
+
+}
+@media (min-width: 650px){
+    .coment{
+        grid-template-areas: 
+        "titulo titulo titulo"
+         ". . . ";
+    }
+}

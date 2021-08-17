@@ -1,0 +1,8 @@
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    &__img{
+        width: 100%;
+        }
+}

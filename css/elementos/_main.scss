@@ -1,0 +1,30 @@
+
+.sectionMain{
+    width: 100%;
+    height: 100vw;
+    max-height: 100vh;
+    min-height: 80vh;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .titulo{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        color: white;
+        font-size: 2.1875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3125rem;
+        margin-bottom: 1.5625rem;
+    }
+    .setaBaixo{
+        width: 1.875rem;
+        
+    }
+}
