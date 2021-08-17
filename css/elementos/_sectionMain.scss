@@ -16,8 +16,8 @@
         "laranja"
         ;
     div{
-            min-width: 17.5rem;
-            min-height: 17.5rem;
+        min-width: 17.5rem;
+        min-height: 17.5rem;
         background-position: center;
         background-size: cover; 
     }
@@ -25,25 +25,25 @@
 //geral
 //específicos
 .ovo{
-    background-image: url("../images/desktop/image-transform.jpg"); 
+    background-image: url("../images/mobile/image-transform.jpg"); 
     grid-area: ovo;
     height: 100%;
 }
 .taca{
-    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-image: url("../images/mobile/image-stand-out.jpg");
     grid-area: taca;
     height: 100%;
 }
 .cereja{
-    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-image: url("../images/mobile/image-graphic-design.jpg");
     grid-area: cereja;
 }
 .laranja{
-    background-image: url("../images/desktop/image-photography.jpg");
+    background-image: url("../images/mobile/image-photography.jpg");
     grid-area: laranja;
 }
 //
-@media (min-width: 650px){
+@media (min-width: 40.625rem){
     .imagensDivs{
         grid-template-rows: 1fr 1fr 1.5fr;
         grid-template-columns: 1fr 1fr;        
@@ -59,6 +59,18 @@
         }
         .Texto{
             padding: 5rem;
+        }
+        .ovo{
+            background-image: url("../images/desktop/image-transform.jpg"); 
+        }
+        .cereja{
+            background-image: url("../images/desktop/image-graphic-design.jpg");
+        }
+        .laranja{
+            background-image: url("../images/desktop/image-photography.jpg");
+        }
+        .taca{
+            background-image: url("../images/desktop/image-stand-out.jpg");
         }
         
     }

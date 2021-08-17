@@ -213,7 +213,7 @@ body {
   height: 100vw;
   max-height: 100vh;
   min-height: 80vh;
-  background-image: url("../images/desktop/image-header.jpg");
+  background-image: url("../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -247,6 +247,12 @@ body {
   width: 1.875rem;
 }
 
+@media (min-width: 40.625rem) {
+  .sectionMain {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+}
+
 .imagensDivs {
   width: 100%;
   min-height: 100vh;
@@ -270,7 +276,7 @@ body {
 }
 
 .ovo {
-  background-image: url("../images/desktop/image-transform.jpg");
+  background-image: url("../images/mobile/image-transform.jpg");
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: ovo;
@@ -278,7 +284,7 @@ body {
 }
 
 .taca {
-  background-image: url("../images/desktop/image-stand-out.jpg");
+  background-image: url("../images/mobile/image-stand-out.jpg");
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: taca;
@@ -286,20 +292,20 @@ body {
 }
 
 .cereja {
-  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-image: url("../images/mobile/image-graphic-design.jpg");
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: cereja;
 }
 
 .laranja {
-  background-image: url("../images/desktop/image-photography.jpg");
+  background-image: url("../images/mobile/image-photography.jpg");
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: laranja;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 40.625rem) {
   .imagensDivs {
     -ms-grid-rows: 1fr 1fr 1.5fr;
         grid-template-rows: 1fr 1fr 1.5fr;
@@ -314,6 +320,18 @@ body {
   }
   .imagensDivs .Texto {
     padding: 5rem;
+  }
+  .imagensDivs .ovo {
+    background-image: url("../images/desktop/image-transform.jpg");
+  }
+  .imagensDivs .cereja {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  .imagensDivs .laranja {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+  .imagensDivs .taca {
+    background-image: url("../images/desktop/image-stand-out.jpg");
   }
 }
 
@@ -372,14 +390,14 @@ body {
   font-size: xx-large;
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  margin: 5px 0px;
+  margin-bottom: 40px;
 }
 
 .corpo {
   font-family: 'Barlow', sans-serif;
   line-height: 1.5;
   font-size: 15px;
-  margin: 5px 0px;
+  margin-bottom: 40px;
 }
 
 .botaoCorpo {
